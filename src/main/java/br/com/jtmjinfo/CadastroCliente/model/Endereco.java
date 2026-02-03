@@ -1,18 +1,24 @@
 package br.com.jtmjinfo.CadastroCliente.model;
 
-import jakarta.persistence.Entity;
+
+import jakarta.persistence.*;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
-@Entity
+
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class Endereco {
-
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String cep;
     private String logradouro;
     private String complemento;
