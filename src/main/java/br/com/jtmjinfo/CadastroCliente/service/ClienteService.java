@@ -1,18 +1,20 @@
 package br.com.jtmjinfo.CadastroCliente.service;
 
 import br.com.jtmjinfo.CadastroCliente.model.Cliente;
-import br.com.jtmjinfo.CadastroCliente.repository.ClienteRepository;
-import org.springframework.stereotype.Service;
 
-@Service
-public class ClienteService {
-    private final ClienteRepository clienteRepository;
+import java.util.List;
 
-    public ClienteService(ClienteRepository clienteRepository) {
-        this.clienteRepository = clienteRepository;
-    }
 
-    public void cadastrarCliente(Cliente cliente){
-        clienteRepository.save(cliente);
-    }
+public interface ClienteService {
+
+    void adicionarCliente(Cliente cliente);
+
+    List<Cliente> buscarTodos();
+
+    Cliente buscarPorId(Long id);
+
+    Cliente atualizarCliente(Long id, Cliente cliente);
+
+    void deletarcliente(Long ud);
+
 }
