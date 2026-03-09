@@ -9,7 +9,7 @@ public interface ClienteService {
 
     void adicionarCliente(Cliente cliente);
 
-    List<Cliente> buscarTodos();
+    Iterable<Cliente> buscarTodos();
 
     Cliente buscarPorId(Long id);
 
