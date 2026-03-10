@@ -1,8 +1,9 @@
 package br.com.jtmjinfo.CadastroCliente.service;
 
+import java.util.Optional;
+
 import br.com.jtmjinfo.CadastroCliente.model.Cliente;
 
-import java.util.List;
 
 
 public interface ClienteService {

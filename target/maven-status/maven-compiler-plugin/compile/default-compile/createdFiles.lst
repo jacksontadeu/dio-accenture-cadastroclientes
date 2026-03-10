@@ -1,0 +1,8 @@
+br/com/jtmjinfo/CadastroCliente/client/ViacepClient.class
+br/com/jtmjinfo/CadastroCliente/service/ClienteService.class
+br/com/jtmjinfo/CadastroCliente/Application.class
+br/com/jtmjinfo/CadastroCliente/service/ClienteServiceImpl.class
+br/com/jtmjinfo/CadastroCliente/model/Endereco.class
+br/com/jtmjinfo/CadastroCliente/model/Cliente.class
+br/com/jtmjinfo/CadastroCliente/repository/EnderecoRepository.class
+br/com/jtmjinfo/CadastroCliente/repository/ClienteRepository.class

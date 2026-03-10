@@ -25,7 +25,7 @@ public class ClienteServiceImpl implements ClienteService{
 
     @Override
     public void adicionarCliente(Cliente cliente) {
-
+        cliRepo.save(cliente);
     }
 
     @Override
